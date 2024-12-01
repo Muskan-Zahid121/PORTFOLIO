@@ -1,0 +1,267 @@
+/* General Styling */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 70px auto;
+    padding: 40px;
+    background: #121214;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 1200px;
+}
+
+/* Title Styling */
+.skills-title h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background: #121214;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid #a3a3a3;
+}
+
+.contact-info-container {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: #121214;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+}
+
+.contact-info-container:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info-container p {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 0;
+    line-height: 1.4; /* Improved readability */
+    background: #121214;
+    align-items: center;
+}
+
+.contact-info-container a {
+    color: #fd9a05;
+    background: #121214;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.9rem; /* Make the text larger for better balance */
+    text-align: left; /* Keep text aligned naturally */
+    line-height: 1; /* Ensure text height is consistent */
+}
+
+.contact-icon {
+    height: 2rem; /* Larger icon for better visual balance */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: #121214;
+    margin-top: 16px;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Navigation Styling */
+nav {
+    margin-top: 30px;
+    text-align: center;
+    background: none;
+}
+
+.nav-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121214;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    background: #121214;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0;
+    background: none;
+}
+
+.nav-links a {
+    font-size: 2rem;
+    color: #03bafc;
+    background-color: #121214;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+/* Footer Styling */
+.skills p {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #f9f8f8;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: none;
+    word-spacing: 2px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .skills {
+        padding: 30px;
+    }
+
+    .skills-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-info-upper-container {
+        flex-direction: column;
+        align-items: stretch; /* Ensure items stretch across container */
+    }
+
+    .contact-info-container {
+        flex-direction: column; /* Stack content vertically */
+        width: 100; /* Make container full width */
+        text-align: center; /* Center-align text and content */
+        gap: 5px; /* Smaller gap for tighter layout */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .contact-info-container p {
+        font-size: 1.4rem; /* Smaller font size for compact layout */
+    }
+
+    .contact-info-container a {
+        font-size: 1.6rem; /* Adjust font size for links */
+    }
+
+    .contact-icon {
+        height: 1.8rem; /* Adjust icon size for smaller screens */
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 2rem;
+    }
+
+    .skills p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info-upper-container {
+        border: none;
+        width: 330px;
+    }
+    .contact-info-container {
+        width: 100%;
+        gap: 2px; /* Further reduce gap */
+        padding: 0.1rem; /* Compact padding */
+    }
+
+    .contact-info-container a {
+        font-size: 22px;
+    }
+
+    .contact-info-container p {
+        font-size: 1.1rem; /* Smaller text for very small screens */
+    }
+
+    .contact-icon {
+        height: 1.5rem; /* Adjust icon size */
+    }
+}
+
+@media (max-width: 350px) {
+    .contact-info-upper-container {
+        border: none;
+        width: 290px;
+    }   
+    .contact-info-container a {
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width: 310px) {
+    .contact-info-upper-container {
+        width: 100%; /* Use full available width */
+        padding: 10px; /* Reduce padding for compactness */
+        gap: 10px; /* Decrease gap between elements */
+        border: none; /* Simplify the design */
+        flex-direction: column; /* Ensure all elements stack vertically */
+    }
+
+    .contact-info-container {
+        width: 100%; /* Full width for small screens */
+        padding: 10px; /* Adjust padding for compactness */
+        gap: 5px; /* Reduce gap between items */
+        flex-direction: column; /* Stack content vertically */
+        text-align: center; /* Center-align content */
+        box-shadow: none; /* Remove shadow for simpler design */
+    }
+
+    .contact-info-container p {
+        font-size: 1rem; /* Smaller font size */
+        line-height: 1.2; /* Adjust line spacing for compactness */
+    }
+
+    .contact-info-container a {
+        font-size: 0.7rem; /* Reduce font size */
+        line-height: 1.2; /* Adjust line height */
+    }
+
+    .nav-links a {
+        font-size: 1.6rem;
+    }
+
+    .contact-icon {
+        height: 1.3rem; /* Adjust icon size for balance */
+        margin-top: 5px; /* Reduce margin */
+    }
+
+    .contact-info-container:hover {
+        transform: none; /* Disable hover scaling for better UX */
+        box-shadow: none; /* Simplify hover effect */
+    }
+}

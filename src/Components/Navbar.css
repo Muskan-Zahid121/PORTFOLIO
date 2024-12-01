@@ -1,0 +1,34 @@
+.navbar {
+    background-color: #000 !important;
+}
+
+.brand-logo {
+    height: 50px;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    font-size: 25px;
+}
+
+.navbar .nav-link:hover {
+    color: rgb(215, 21, 166) !important;
+    text-decoration: none !important;
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+.list-item:hover {
+    cursor: pointer;
+}
+@media (max-width: 480px)  {
+    .brand-logo {
+        height: 30px;
+    }
+}
